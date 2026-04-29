@@ -1,63 +1,94 @@
-# 🚀 buy pansl – Payment Gateway QRIS
+
+# 🚀 buy pansl – Payment Gateway QRIS  
+### by <b>FallZx Store</b>
 
 <p align="center">
-  <img src="https://files.njy.my.id//dub5.jpg" alt="Thumbnail" />
+  <img src="https://files.njy.my.id//dub5.jpg" alt="Thumbnail" width="80%" />
 </p>
 
-Credit by Fik Projects  
-Bebas rename, asal pake credit 
-
-Sistem auto-create panel Pterodactyl berbasis Express.js + QRIS (Pakasir).  
-User bayar → sistem cek pembayaran → panel otomatis dibuat → notifikasi Telegram.
+<p align="center">
+  <b>Automatic Panel Creator • QRIS Payment • Fast & Simple</b>
+</p>
 
 ---
 
-## ✨ Fitur Utama
+## 👑 About Project
 
-- Auto Create User & Server Pterodactyl
-- Payment Gateway QRIS (Pakasir)
-- Status transaksi: pending, success, failed, canceled
-- Notifikasi Telegram realtime
-- Support Admin / Reseller Panel
-- Pilihan produk (1GB – Unlimited)
-- API ready (frontend & backend)
-- Auto detect panel maintenance
-- In-memory database (Map)
-- Webhook Pakasir
+<b>buy pansl</b> adalah sistem otomatis untuk membuat panel <b>Pterodactyl</b> menggunakan <b>Express.js</b> yang terintegrasi dengan <b>Payment Gateway QRIS (Pakasir)</b>.
 
----
+> User bayar → Sistem verifikasi → Panel langsung dibuat otomatis ⚡
 
-## 🧠 Alur Sistem
-
-1. User pilih produk
-2. Sistem generate Order ID
-3. QRIS dibuat dari Pakasir
-4. Status PENDING
-5. User bayar QR
-6. Sistem cek / webhook
-7. Jika SUCCESS:
-   - Buat user panel
-   - Buat server
-   - Kirim credential
-   - Notif Telegram
-8. Selesai
+### Cocok untuk:
+- Jualan panel hosting  
+- Auto store  
+- Reseller panel  
+- Integrasi bot / website  
 
 ---
 
-## 📦 Produk
+## 🏷️ Credits
 
-1gb  – 1GB Panel  
-2gb  – 2GB Panel  
-3gb  – 3GB Panel  
-4gb  – 4GB Panel  
-5gb  – 5GB Panel  
-unli – Unlimited Panel  
-admin – Admin Panel  
+- 🏪 Remake & Development: <b>FallZx Store</b>  
+- 🎯 Original Creator: <b>Fik Projects</b>
+
+<b>Note:</b> Bebas digunakan & dimodifikasi, wajib menyertakan credit.
 
 ---
 
-## 🗂️ Struktur Folder
-```projects
+## ✨ Features
+
+- ⚡ Auto Create User & Server Pterodactyl  
+- 💳 Payment Gateway QRIS (Pakasir)  
+- 🔄 Auto Check Payment (Webhook & Manual)  
+- 📊 Status transaksi:
+  - <b>pending</b>
+  - <b>success</b>
+  - <b>failed</b>
+  - <b>canceled</b>
+- 🤖 Notifikasi Telegram realtime  
+- 👑 Support Admin & Reseller Panel  
+- 📦 Multi produk (1GB – Unlimited)  
+- 🔌 API Ready (Frontend & Backend)  
+- 🛠️ Auto detect panel maintenance  
+- 🧠 In-memory database (Map)  
+- 🌐 Webhook Support  
+
+---
+
+## 🧠 System Flow
+
+1. User memilih produk  
+2. Sistem generate <b>Order ID</b>  
+3. QRIS dibuat dari Pakasir  
+4. Status: <b>PENDING</b>  
+5. User melakukan pembayaran  
+6. Sistem cek via API / Webhook  
+7. Jika <b>SUCCESS</b>:
+   - Create user panel  
+   - Create server  
+   - Kirim credential login  
+   - Notifikasi Telegram  
+8. Done ✅  
+
+---
+
+## 📦 Product List
+
+| Code  | Deskripsi |
+|------|----------|
+| 1gb  | 1GB Panel |
+| 2gb  | 2GB Panel |
+| 3gb  | 3GB Panel |
+| 4gb  | 4GB Panel |
+| 5gb  | 5GB Panel |
+| unli | Unlimited Panel |
+| admin | Admin Panel |
+
+---
+
+## 🗂️ Project Structure
+
+```bash
 project/
 ├─ public/
 │  ├─ home.html
@@ -68,58 +99,3 @@ project/
 ├─ package.json
 ├─ .env
 └─ README.md
-```
----
-
-## ⚙️ Environment (.env)
-```env
-PORT=8080
-
-domainPanel=https://panel.example.com  
-apiKey=ptla_xxxx  
-nestId=5  
-eggId=15  
-locId=1  
-
-pakasirSlug=  
-pakasirApiKey=  
-
-telegramToken=xxxxx  
-telegramChatId=xxxxx  
-
-webhookUrl=https://domainlu.com/api/webhook/pakasir  
-
-contactWa=628xxxx  
-contactCh=https://whatsapp.com/channel/xxxx  
-contactTg=https://t.me/xxxx  
-```
----
-
-## ▶️ Cara Menjalankan
-```run
-npm install  
-npm start
-```
----
-
-## 🌍 Endpoint API
-GET  /api/config  
-POST /api/order  
-GET  /api/check/:id  
-POST /api/cancel  
-POST /api/webhook/pakasir  
-
----
-
-
-
----
-
-## ⚠️ Catatan
-
-- Database masih in-memory
-- Restart = data hilang
-- nnti lu kmbngin sendiri wee😘🗿
-- Jangan expose .env
-
----
