@@ -28,7 +28,7 @@
 
 ## 🏷️ Credits
 
-- 🏪 Remake & Development: <b>FallZx Store</b>  
+- 🏪 Remake & Development: <b>FallZx Store Infinity</b>  
 - 🎯 Original Creator: <b>Fik Projects</b>
 
 <b>Note:</b> Bebas digunakan & dimodifikasi, wajib menyertakan credit.
