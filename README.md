@@ -1,9 +1,9 @@
 
-# 🚀 buy pansl – Payment Gateway QRIS  
+# 🚀 PAYMENT GATEWAY QRIS
 ### by <b>FallZx Store</b>
 
 <p align="center">
-  <img src="https://files.njy.my.id//dub5.jpg" alt="Thumbnail" width="80%" />
+  <img src="https://img2.pixhost.to/images/7526/720139624_marin-kitagawa.jpg" alt="Thumbnail" width="80%" />
 </p>
 
 <p align="center">
